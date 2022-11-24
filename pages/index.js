@@ -9,7 +9,7 @@ export default function Home() {
 	const [city, setCity] = useState("");
 	const [weather, setWeather] = useState({});
 	const [loading, setLoading] = useState(false);
-	const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${process.env.API_KEY}`;
+	const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=db6741c5aa2ffa54ebc1a0a8c2f2b400`;
 	const fetchWeather = (e) => {
 		e.preventDefault();
 		setLoading(true);
